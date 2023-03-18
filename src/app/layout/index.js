@@ -2,6 +2,8 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
 import Footer from '@/component/Footer'
+import Contact from '@/component/Contact'
+
 
 import s from './index.module.less';
 import logo from '@/img/logo.svg'
@@ -29,7 +31,7 @@ const Layout = () => {
       
       <Outlet />
 
-
+      <Contact />
       <Footer />
     </>
   )
