@@ -18,7 +18,7 @@ configure({enforceActions: 'observed'})
 
 let Index  = Loadable({ loader: () => import('./app/index')})
 let Layout = Loadable({ loader: () => import('./app/layout')})
-let Slide = Loadable({ loader: () => import('./app/slide')})
+let Slide  = Loadable({ loader: () => import('./app/slide')})
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,7 +29,7 @@ root.render(
         <Routes>
           <Route element={<Layout />}>
             <Route path="/"           element={<Index />} />
-            <Route path="/slide"           element={<Slide />} />
+            <Route path="/slide"      element={<Slide />} />
           </Route>
         </Routes>
       </BrowserRouter>
