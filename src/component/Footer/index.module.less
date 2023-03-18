@@ -88,9 +88,15 @@
   width: 56px;
   height: 56px;
 
-  &:hover .circle circle + circle {
-    transition: stroke-dashoffset 1.4s ease;
-    stroke-dashoffset: 0;
+  &:hover {
+    img {
+      filter: brightness(0) saturate(100%) invert(29%) sepia(11%) saturate(2358%) hue-rotate(91deg) brightness(95%) contrast(88%);
+    }
+
+    .circle circle + circle {
+      transition: stroke-dashoffset 1.4s ease;
+      stroke-dashoffset: 0;
+    }
   }
 
   .circle {
