@@ -1,3 +1,16 @@
+:global {
+  .sel{
+    opacity: 1!important;
+
+    .circle1 {
+      stroke-dasharray: 44px;
+      stroke-dashoffset: 44px;
+      animation: stroke-dashoffset 5s linear forwards;
+    }
+  }
+}
+
+
 .main {
   width: var(--sys-width);
   margin: 0 auto;
@@ -105,3 +118,7 @@
   display: block;
   overflow: visible;
 }
+
+
+
+
