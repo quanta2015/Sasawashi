@@ -9,7 +9,7 @@ class Store {
     makeAutoObservable(this);
   }
 
-  user = null
+  open = false
 
 
   async post(url, params) {
