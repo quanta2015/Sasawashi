@@ -1,3 +1,19 @@
+export const MENU_LIST = [{
+    key:"Products",path:"/product",submenu:[{"list":[],"en":"All Item","jp":"すべての商品","url":"/product?search=all"},{"list":[{"en":"ストール","url":"/product/stole"},{"en":"ハンカチ","url":"/product/handkerchief"},{"en":"ハット","url":"/product/hat"},{"en":"トップス","url":"/product/tops"},{"en":"手袋 / カバー","url":"/product/gloves_cover"},{"en":"ウォーマー","url":"/product/warmer"},{"en":"ソックス","url":"/product/socks"}],"en":"Wear","jp":"肌に優しい衣類","url":"/product?search=wear"},{"list":[{"en":"スリッパ","url":"/product/slippers"},{"en":"シーツ","url":"/product/sheets"},{"en":"ブランケット","url":"/product/blankets"},{"en":"カバー","url":"/product/cover"},{"en":"ピロケース","url":"/product/spare_pillowcases"},{"en":"まくら","url":"/product/pillows"},{"en":"クッションカバー","url":"/product/cushioncover"},{"en":"カーテン","url":"/view/page/curtain"}],"en":"Interior","jp":"快適なお部屋用品","url":"/product?search=interior"},{"list":[{"en":"タオル","url":"/product/towels"},{"en":"ボディ / 洗顔","url":"/product/body_facewash"},{"en":"マット","url":"/product/mat"},{"en":"シャンプー / コンディショナー","url":"/product/shampoo_conditioner"},{"en":"石けん","url":"/product/soap"}],"en":"Bath & Kittchen","jp":"台所・お風呂用品","url":"/product?search=bath"},{"list":[{"en":"マウスケア","url":"/product/mouth_care"},{"en":"くま笹液","url":"/product/kumazasa-solution"},{"en":"くまざさバーム","url":"/product/kumazasa-balm"},{"en":"マスク","url":"/product/mask"}],"en":"Health-care","jp":"健康・日用品","url":"/product?search=health"},{"list":[{"en":"糸","url":"/product/sasawashi-yarn"}],"en":"Yarn","jp":"ささ和紙糸","url":"/product?search=yarn"}]
+},{
+    key:"About",path:"/about"
+},{
+    key:"Guide",path:"/guide"
+},{
+    key:"News",path:"/news"
+},{
+    key:"Shop List",path:"/shop"
+},{
+    key:"Contact",path:"/contact"
+}]
+
+
+
 export const BASE = `https://pro.form-mailer.jp/fms/`
 export const CONTACT_DATA = [{
   title:"法人・小売店のお客様",
@@ -547,7 +563,7 @@ export const SHOP_LIST = [
                 "addr": "兵庫県神戸市東灘区住吉本町2-20-26",
                 "tel": "03-5772-6008",
                 "gps": "https://goo.gl/maps/yRaKiXbzSkWuWRCh8",
-                "img": "https://gigaplus.makeshop.jp/sasawashi/img/company/shop_kobe_sp.jpg",
+                "img": "https://gigaplus.makeshop.jp/sasawashi/img/company/shop_kobe.jpg",
                 "sche": ["11:00 - 18:00","*定休日：火曜日・水曜日"],
                 "web": "http://www.we-wish.co.jp/",
                 "desc":"SASAWASHI製品をゆっくりと手に取ってご覧いただけるスペースが神戸にできました\n。豊富なラインナップで、カーテンもご覧いただけます。"

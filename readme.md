@@ -22,3 +22,20 @@ document.querySelectorAll(".company-dealers-area ").forEach((item)=> {
   })
 })
 ```
+
+
+```
+document.querySelectorAll(".header-nav-menu-item").forEach((item)=> {
+  let v1 = item.querySelector(".header-nav-menu-link-en").innerHTML
+  let v2 = item.querySelector(".header-nav-menu-link-jp").innerHTML.split('<svg')[0]
+  console.log(v1,v2)
+  
+  let list = item.querySelectorAll(".header-nav-menu-item-inner a")
+  list.forEach((o)=>{
+      let name = o.innerHTML
+      let url = o.getAttribute("href")
+      console.log(`\{name:"${name}", url:"${url}"  \}`)
+  })
+  console.log("\n")
+})
+```

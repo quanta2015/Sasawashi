@@ -1,6 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
+
+import Nav from '@/component/Nav'
 import Footer from '@/component/Footer'
 import Contact from '@/component/Contact'
 
@@ -18,16 +20,7 @@ const Layout = () => {
 	 
   return (
     <>
-      <div className={s.nav}>
-        <div className={s.logo}>
-          <img src={logo} alt=""/>
-          <span>ONLINE SHOP</span>
-        </div>
-
-        <div className={s.wrap}>
-          
-        </div>
-      </div>
+      <Nav />
       
       <Outlet />
 
