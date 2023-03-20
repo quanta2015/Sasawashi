@@ -9,16 +9,13 @@ let chrome = require('selenium-webdriver/chrome');
 let proxy = require('selenium-webdriver/proxy');
 let opts = new chrome.Options();
 
-
 const server = `http://sasawashi.com`
 
 
-console.log(data.length)
-// const url = 'http://sasawashi.com/view/item/000000000040?category_page_id=all_items';
 
-var ret = [];
+var ret = []
 
-(async function helloSelenium() {
+(async function dataCollection() {
 
   const els =async(e,attr)=>{ 
     let ret = []
