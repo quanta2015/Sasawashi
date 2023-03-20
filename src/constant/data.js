@@ -16,7 +16,7 @@ export const MENU_LIST = [{
 }]
 
 
-export GUIDE_LIST = [
+export const GUIDE_LIST = [
     {
         "name": "ご注文について",
         "ret": [
