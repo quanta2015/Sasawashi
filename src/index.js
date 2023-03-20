@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'mobx-react'
 import { configure } from 'mobx'
@@ -32,7 +32,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider {...injects}>
     <ConfigProvider locale={zhCN}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/"        element={<Index />} />
@@ -46,7 +46,7 @@ root.render(
             <Route path="/slide"  element={<Slide />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ConfigProvider>
   </Provider>
 );
