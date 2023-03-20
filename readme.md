@@ -4,6 +4,29 @@
 
 ### data
 
+爬取GUIDE数据
+```
+let result = []
+document.querySelectorAll(".contents-section").forEach((item)=> {
+  let name = item.querySelector(".contents-section-header-title").innerText
+  let list = item.querySelectorAll(".contents-section-list .contents-section-item")
+  let ret = []
+
+  list.forEach((o)=>{
+    let title = o.querySelector(".contents-section-item-title").innerText
+    let detail = o.querySelector(".contents-section-item-detail").innerText
+    detail = detail.replaceAll('\t','').split('\n')
+    ret.push({title,detail})
+    
+  })
+
+  result.push({ name, ret })
+
+})
+console.log(result)
+```
+
+
 爬取新闻数据
 ```
 document.querySelectorAll(".news-list-item a").forEach((item)=> {
