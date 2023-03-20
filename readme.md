@@ -39,3 +39,15 @@ document.querySelectorAll(".header-nav-menu-item").forEach((item)=> {
   console.log("\n")
 })
 ```
+
+
+```
+document.querySelectorAll(".news-list-item").forEach((item)=> {
+  let list = item.querySelectorAll(".news-list-link")
+  list.forEach((o)=>{
+  let date = o.querySelector(".news-list-data").innerHTML
+  let title = o.querySelector(".news-list-descripton ").innerHTML.split('<svg')[0]
+  console.log(`\{date:"${date}", title:"${title}"  \}`)
+  })
+})
+```
