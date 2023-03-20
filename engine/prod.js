@@ -108,14 +108,6 @@ var ret = []
         }
       }
 
-
-      // console.log(type,name,price,desc)
-      // console.log(imgList)
-      // console.log(clrList)
-      // console.log(cltList)
-      // console.log(sizeList)
-
-
       let item = {
         type,
         name,
@@ -128,12 +120,10 @@ var ret = []
         intr,
       }
 
-      // console.log(JSON.stringify(item,null,2))
-
       ret.push(item)
     }
 
-    fs.writeFileSync('findata.json',JSON.stringify(ret,null,2))
+    fs.writeFileSync('products.json',JSON.stringify(ret,null,2))
 
   }finally {
     await driver.quit();
