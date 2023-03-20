@@ -109,7 +109,39 @@
 
 
 .return {
+  position: relative;
   margin-top: 100px;
+  padding-left: 98px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: opacity .3s ease;
+  cursor: pointer;
+
+  &:before {
+    width: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    height: 1px;
+    background-color: #ccc;
+    content: "";
+  }
+
+  &:after {
+    width: 28px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    height: 1px;
+    background-color: #206039;
+    content: "";
+  }
 }
   
 

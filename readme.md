@@ -4,6 +4,17 @@
 
 ### data
 
+爬取新闻数据
+```
+document.querySelectorAll(".news-list-item a").forEach((item)=> {
+  let url = item.getAttribute("href")
+  console.log(url)
+})
+```
+
+
+
+
 爬取产品数据
 ```
 document.querySelectorAll(".product-list-item").forEach((item)=> {
