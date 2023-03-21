@@ -21,7 +21,6 @@ document.querySelectorAll(".contents-section").forEach((item)=> {
   })
 
   result.push({ name, ret })
-
 })
 console.log(result)
 ```

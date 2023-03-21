@@ -43,7 +43,8 @@
     }
   }
 
-  .detail{
+  .newItem {
+    position: relative;
     border-bottom: 1px solid #e0e0e0;
     display: block;
     padding: 24px 0 ;
@@ -66,6 +67,11 @@
       margin-top: 10px;
       font-size: 16px;
       color: #333;
+    }
+
+    img {
+      display: none;
+      width: 12px;
     }
   }
 
@@ -143,7 +149,150 @@
     content: "";
   }
 }
+
+
+.breadcrumb {
+  display: flex;
+  padding: 10px 20px 6px;
+  max-width: var(--sys-width);
+  font-size: 14px;
+
+  span {
+    position: relative;
+
+    a {
+      color: #000;
+      font-weight: bold;
+    }
+
+    &:nth-child(2) {
+      margin-left: 32px;
+
+      &:before {
+
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -21px;
+        display: block;
+        margin: auto;
+        width: 12px;
+        height: 1px;
+        border: none;
+        background-color: #cdcdcd;
+        content: "";
+        transform: none;
+      }
+    }
+  }
+}
   
+
+
+@media screen and (max-width: 768px) {
+
+  .newsList {
+    width: 100vw;
+  }
+
+  .title {
+    font-size: unset!important;
+    margin-top: 40px!important;
+    margin-bottom: 0!important;
+
+    h1 {
+      font-size: 40px!important;
+      margin-bottom: 10px!important;
+    }
+
+    span {
+      font-size: 13px!important;
+    }
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .content {
+    margin-top: 20px;
+
+    .newItem {
+      padding: 20px 0;
+
+      h1{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+
+      p{
+        margin: 0;
+        font-size: 14px;
+      }
+
+      img {
+        position: absolute;
+        right: 15px;
+        top: 36px;
+        display: block;
+      }
+    }
+  }
+
+  .pager {
+    font-size: 18px!important;
+  }
+
+
+  .newsDetail {
+    width: 100vw;
+    padding: 75px 20px 40px;
+    box-sizing: border-box;;
+  }
+
+
+  .date {
+    margin-bottom: -10px;
+
+  }
+
+  .detail {
+    font-size: 14px;
+  }
+
+  .return {
+    margin-top: 60px;
+    padding-left: 50px;
+
+    &:before {
+      width: 40px;
+    }
+
+    &:after {
+      width: 14px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
