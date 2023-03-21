@@ -274,12 +274,19 @@
           }
 
           .submenu {
+            max-height: 0;
+            overflow: hidden;
             position: relative;
             width: 100%;
             opacity: 1;
             visibility: visible;
             top: 0;
             position: relative!important;
+            transition: max-height .5s;
+
+            &.show {
+              max-height: 1000px;
+            }
 
           }
 
