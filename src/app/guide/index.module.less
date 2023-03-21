@@ -104,9 +104,20 @@
 
 @media screen and (max-width: 768px) {
 
+  :global {
+
+  }
+
   .guide {
     width: 100vw;
     padding-top: 75px
+  }
+
+  .wrap {
+
+    &+:global(.g-tl-line) {
+      margin-top: 30px;
+    }
   }
 
   .title {
