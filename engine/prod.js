@@ -12,8 +12,13 @@ let opts = new chrome.Options();
 const server = `http://sasawashi.com`
 
 
+data = [
+    {
+       
+        "url": "/view/item/000000000090?category_page_id=yarn"
+    }]
 
-var ret = []
+var ret = [];
 
 (async function dataCollection() {
 
@@ -63,61 +68,61 @@ var ret = []
       let mark  = 0
       let trs   = 0
 
-      for(let e of list) {
-        let tag = await e.getTagName()
-        let val = await e.getText()
-        switch(tag) {
-          case 'h2':
-            intr.push({key: val, val: null});
-            index++
-            mark = 0
-            break;
-          case 'p':
-            if (mark ===0) {
-              intr[index].val = val;
-            }else{
-              let len = intr[index].val.length
-              intr[index].val[len-1].p =val
-            }
-            break;
-          case 'h3':
-            if (mark === 0) {
-              intr[index].val = []
-              mark = 1;
-            }
-            intr[index].val.push({t:val, p: null});
-            break;
-          case 'table':
-            if (mark === 0) {
-              intr[index].val = []
-              mark = 2;
-            }
-            break;
-          case 'tr':
-            intr[index].val.push({key:null,val:null})
-            break;
-          case 'td':
-            let len = intr[index].val.length-1
-            if (trs===0) {
-              intr[index].val[len].key = val
-              trs = 1
-            }else if (trs===1) {
-              intr[index].val[len].val = val
-              trs = 0
-            }
-        }
-      }
+      // for(let e of list) {
+      //   let tag = await e.getTagName()
+      //   let val = await e.getText()
+      //   switch(tag) {
+      //     case 'h2':
+      //       intr.push({key: val, val: null});
+      //       index++
+      //       mark = 0
+      //       break;
+      //     case 'p':
+      //       if (mark ===0) {
+      //         intr[index].val = val;
+      //       }else{
+      //         let len = intr[index].val.length
+      //         intr[index].val[len-1].p =val
+      //       }
+      //       break;
+      //     case 'h3':
+      //       if (mark === 0) {
+      //         intr[index].val = []
+      //         mark = 1;
+      //       }
+      //       intr[index].val.push({t:val, p: null});
+      //       break;
+      //     case 'table':
+      //       if (mark === 0) {
+      //         intr[index].val = []
+      //         mark = 2;
+      //       }
+      //       break;
+      //     case 'tr':
+      //       intr[index].val.push({key:null,val:null})
+      //       break;
+      //     case 'td':
+      //       let len = intr[index].val.length-1
+      //       if (trs===0) {
+      //         intr[index].val[len].key = val
+      //         trs = 1
+      //       }else if (trs===1) {
+      //         intr[index].val[len].val = val
+      //         trs = 0
+      //       }
+      //   }
+      // }
 
       let item = {
         type,
         name,
         price,
         desc,
-        imgList,
-        clrList,
-        cltList,
-        sizeList,
-        intr,
+        imgList:JSON.stringify(imgList),
+        clrList:JSON.stringify(clrList),
+        cltList:JSON.stringify(cltList),
+        sizeList:JSON.stringify(sizeList),
+        // intr,
       }
 
       ret.push(item)
