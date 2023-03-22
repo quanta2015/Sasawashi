@@ -27,6 +27,13 @@ export const getFilter = (search)=>{
     return filter
 }
 
+
+export const toOpt = (list,ret=[]) => { 
+  list.map(o=> ret.push({label:o, value: o}))
+  ret.unshift( {label:'選択してください', value: '' })
+  return ret
+}
+
 // export const formatTime = (dateStr)=> {
 //   var publishTime
 //   if (dateStr && dateStr.toString().length <= 10) {
