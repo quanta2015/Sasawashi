@@ -19,10 +19,11 @@ export const scrollToBottom =(direction)=> {
 
 export const getFilter = (search)=>{
   const searchParams = new URLSearchParams(search)
+    const id = searchParams.get('id')
     const name = searchParams.get('name')
     const sub = searchParams.get('sub')
     const type = searchParams.get('type')
-    let filter = sub? {name:name, key:'sub', val:sub }:{name:name, key:'type', val:type }
+    let filter = sub? {id ,name, key:'sub', val:sub }:{id, name:name, key:'type', val:type }
     return filter
 }
 
