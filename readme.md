@@ -51,3 +51,40 @@ document.querySelectorAll(".news-list-item").forEach((item)=> {
   })
 })
 ```
+
+```爬取about_Feature数据
+document.querySelectorAll(".about-everyday-feature").forEach((item)=> {
+
+let header_en= item.querySelector("p").innerText
+let header_title= item.querySelector("h3").innerText
+let  content = item.querySelector(".about-everyday-feature-content-text").innerText
+let img = item.querySelector("img").src
+
+console.log(`\{header_en:"${header_en}", header_title:"${header_title}", content :"${content }", img:"${img}"  \}`)
+})
+```
+
+
+```爬取about_Concept数据
+document.querySelectorAll(".about-concept-content-text").forEach((item)=> {
+let header_txt= item.innerText
+console.log(`\{"header_txt":"${header_txt}"  \},`)
+})
+```
+
+```爬取about_everyday_content数据
+document.querySelectorAll(".about-everyday-content").forEach((item)=> {
+let content= item.innerText
+console.log(`\{"content":"${content}"  \},`)
+})
+```
+
+```爬取about_washikumazasa数据
+document.querySelectorAll(".about-washikumazasa-row").forEach((item)=> {
+let title = item.querySelector("h3").innerText
+let text = item.querySelector("p").innerText
+let img = item.querySelector("img").src
+
+console.log(`\{title :"${title }", text :"${text }", img:"${img}"  \}`)
+})
+```

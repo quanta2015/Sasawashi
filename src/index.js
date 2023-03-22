@@ -18,7 +18,7 @@ configure({enforceActions: 'observed'})
 let Index  = Loadable({ loader: () => import('./app/index')})
 let Layout = Loadable({ loader: () => import('./app/layout')})
 // let Product  = Loadable({ loader: () => import('./app/product')})
-// let About    = Loadable({ loader: () => import('./app/about')})
+let About    = Loadable({ loader: () => import('./app/about')})
 let Guide    = Loadable({ loader: () => import('./app/guide')})
 let News     = Loadable({ loader: () => import('./app/news')})
 let Shop     = Loadable({ loader: () => import('./app/shop')})
@@ -37,13 +37,10 @@ root.render(
           <Route element={<Layout />}>
             <Route path="/"        element={<Index />} />
             {/*<Route path="/product" element={<Product />} />*/}
-            {/*<Route path="/about"   element={<About />} />*/}
-
+            <Route path="/about"   element={<About />} />
             <Route path="/guide"   element={<Guide />} />
             <Route path="/news"    element={<News />} />
             <Route path="/shop"    element={<Shop />} />
-
-            {/*<Route path="/guide"   element={<Guide />} />*/}
             <Route path="/news"    element={<News />} />
             <Route path="/shop"       element={<Shop />} />
 
