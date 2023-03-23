@@ -361,7 +361,6 @@ export const COMP_DESC = [
     }
 ]
 
-
 export const SHOP_LIST = [
     {
         "area": "北海道",
@@ -1081,7 +1080,9 @@ export const SHOP_LIST = [
 
 export const ABOUT_CONCEPT =[
     {
-        "content":"毎日を、気持ちよく、すこやかに暮らしたい。きっと誰もが思う当たり前のことが、環境や生活スタイルなどの変化によって簡単には得がたくなっている、今の時代。"  },
+        "content":"毎日を、気持ちよく、すこやかに暮らしたい。"  },
+    {
+        "content":"きっと誰もが思う当たり前のことが、環境や生活スタイルなどの変化によって簡単には得がたくなっている、今の時代。"},    
     {
         "content":"「ささ和紙」という希有な素材を生み出した私たちは、その良さをひとつひとつ丁寧に生かして、日常生活に「気持ちよさ」と「すこやかさ」をお届けするアイテムを開発してまいりました。"  },
     {
@@ -1094,32 +1095,39 @@ export const ABOUT_CONCEPT =[
 
 export const ABOUT_EVERYDAY_CONTENT =[
 {
-    "content":"ささ和紙の布は、くまざさを漉き込んだ和紙を細長くカットして、撚りをかけて糸にし、布に織り上げたものです。\n和紙にくまざさを漉き込むことで、天然由来の抗菌力やにおいを抑える力を備えることができました。その和紙を、ごくごく細いテープ状に裁断して撚りをかけると、結び目のない長くて丈夫な糸になります。和紙だから、軽く、吸湿性に優れ毛羽立つことなく、紫外線からも守ってくれます。 綿と同じくらい洗濯性に優れ、洗っても抗菌力はおちません。そんなささ和紙だから、提供できる「心地よさ」があります。"  },
+    "content":"ささ和紙の布は、くまざさを漉き込んだ和紙を細長くカットして、撚りをかけて糸にし、布に織り上げたものです。"  },
+{
+    "content":"和紙にくまざさを漉き込むことで、天然由来の抗菌力やにおいを抑える力を備えることができました。\nその和紙を、ごくごく細いテープ状に裁断して撚りをかけると、結び目のない長くて丈夫な糸になります。\n和紙だから、軽く、吸湿性に優れ毛羽立つことなく、紫外線からも守ってくれます。 綿と同じくらい洗濯性に優れ、洗っても抗菌力はおちません。\nそんなささ和紙だから、提供できる「心地よさ」があります。"},
 ]
 
 export const ABOUT_FEATURE =[
 {
-    "header_en":"Features01", 
+    "en":"Features",
+    "num":"01",
     "title":"驚きの吸水力でサラサラが続く心地よさ", 
     "content":"和紙だから、サラサラ快適綿の約２倍の吸水力。 しかも水分の後戻りがほとんどないため、 汗をかいてもべとつかず、表面はいつもサラサラ。", 
     "img":"https://gigaplus.makeshop.jp/sasawashi/img/about/feature_01.jpg"  },
 {   
-    "header_en":"Features02", 
+    "en":"Features",
+    "num":"02",
     "title":"天然の抗菌・防臭性で雑菌・匂いを防いで心地よく", 
     "content":"くまざさが持つ天然の抗菌防臭力で、雑菌の繁殖を抑え、気になるにおいを防ぎます。", 
     "img":"https://gigaplus.makeshop.jp/sasawashi/img/about/feature_02.jpg"  },
 {   
-    "header_en":"Features03", 
+    "en":"Features",
+    "num":"03",
     "title":"天然原料で安心、肌に優しい心地よさ", 
     "content" :"「ささ和紙」は天然生まれ。また、繊維の構造上ケバがないため、チクチクせず、わたぼこりも発生しにくいので、肌にストレスをかけません。", 
     "img":"https://gigaplus.makeshop.jp/sasawashi/img/about/feature_03.jpg"  },
 {   
-    "header_en":"Features04", 
+    "en":"Features",
+    "num":"04",
     "title":"お手入れ簡単で心地よさ長持ち", 
     "content":"「ささ和紙」製品は、ネットに入れて洗濯機で手軽に洗えます。シーツや枕カバーなどカバーリング類は、乾燥機もご使用いただけます。", 
     "img":"https://gigaplus.makeshop.jp/sasawashi/img/about/feature_04.jpg"  },
 {   
-    "header_en":"Features05", 
+    "en":"Features",
+    "num":"05",
     title:"環境にも優しい素材で夏も冬も心地よく", 
     "content":"「ささ和紙」には、環境にも人にもやさしい特長がいっぱい。薬剤を使うこと無く98%以上もの紫外線をカットし、断熱性に優れ、夏は涼しく冬暖かい。", 
     "img":"https://gigaplus.makeshop.jp/sasawashi/img/about/feature_05.jpg" }

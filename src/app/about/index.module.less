@@ -7,8 +7,8 @@
 .about {
   display: flex;
   flex-direction: column;
-  width: var(--main-width);
-  
+  max-width: 1280px;
+  padding-left: 200px;
 }
 
 .header {
@@ -37,21 +37,20 @@
       line-height: 1.1;
     }
 
-    span {
-      margin-top: 24px;
-      font-size: 20px;
-      line-height: 1;
-    }
+      span {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 1;
+      }
   }
 
   .bg {
-    flex: 2;
     
     img {
       max-width: 100%;
       width: 100%;
       height: auto;
-      vertical-align: middle;
+      vertical-align: top;
     }
   }
 }
@@ -70,6 +69,7 @@
   flex-direction: column;
   margin-bottom: 30px;
 
+
   label {
     margin-bottom: 12px;
     font-size: 16px;
@@ -78,6 +78,7 @@
   }
 
   span {
+    width: 350px;
     font-weight: 500;
     font-size: 26px;
     line-height: 1.6923076923;
@@ -85,9 +86,24 @@
   }
 }
 
+.concept{
+  float: left;
+  margin-left: 300px;
+  margin-top: -120px;
+
+  p{
+    font-size: 15px;
+    width: 680px;
+    color: #666;
+  }
+
+}
+
 .gallery{
-  padding-left: 25%;
-  margin: 60px;
+  margin-top: 120px;
+  max-width: 1280px;
+  padding-left: 80px;
+
   img {
     max-width: 100%;
     width: 100%;
@@ -96,9 +112,14 @@
   }
 }
 
-.concept
-{
-  margin-left: 5.2727272727%;
+.content{
+  p{
+    white-space: pre-wrap;
+    font-size: 15px;
+    width: 980px;
+    color: #666;
+    line-height: 30px;
+  }
 }
 
 .tab {
@@ -140,18 +161,16 @@
   }
 }
 
-
-
 .shopitem {
   display: flex;
-  
+
   &+.shopitem {
     margin-top: 100px;
   }
 
   .img {
     flex: 2;
-    margin-right: 80px;
+    margin-left: 80px;
 
     img {
       max-width: 100%;
@@ -192,12 +211,12 @@
 
     i {
       display: inline-block;
-      font-family: "Lato", sans-serif;
+      font-family: "Noto Serif JP", "HiraKakuProN-W3", "Meiryo", sans-serif;
       color: var(--clr-main);
       font-style: normal;
       margin-top: 30px;
       padding-top: 20px;
-      font-size: 15px;
+      font-size: 24px;
       line-height: 1;
       position: relative;
 
@@ -213,15 +232,13 @@
         width: 20px;
       }
     }
-
-    
   }
 }
 
 .shopDetail {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
+  // padding-top: 25px;
 
   .row {
     display: flex;
@@ -266,7 +283,69 @@
   }
 }
 
+.featureItem{
+  display: flex;
+  
+  &+.featureItem {
+    margin-top: 100px;
+  }
 
+  .img {
+    flex: 2;
+    margin-right: 80px;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+  }
+
+  .detail {
+    flex: 3;
+    color: #333;
+
+    h1 {
+      margin:0;
+      font-size: 24px;
+      line-height: 1.5;
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      color: var(--clr-main);
+
+      em {
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 1;
+        color: #333;
+        font-style: normal;
+      }
+    }
+
+    p {
+      margin-top: 22px;
+      font-size: 16px;
+      color: #206039;
+      font-family: "Lato", sans-serif;
+
+      span{
+        margin-left: 12px;
+        font-size: 52px;
+        line-height: 1;
+        font-family: "Noto Serif JP", "HiraKakuProN-W3", "Meiryo", sans-serif;   
+      }
+    }
+
+    h3{
+      margin-top: 16px;
+      font-weight: 500;   
+      font-size: 26px;
+      line-height: 1.6923076923;   
+      color: #666;
+    }
+  }
+}
 
 .menu {
   padding-top: 20px;
