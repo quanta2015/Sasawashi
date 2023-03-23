@@ -222,12 +222,22 @@
   display: flex;
   justify-content: center;
   height: var(--menu-height-pc);
+  
+
+  
 
 
   img {
+    cursor: pointer;
+    transition: .5s;
     width: 20px;
     display: inline-block;
     margin: 0 10px;
+    transition: .5s;
+
+    &:hover {
+      opacity: .6;
+    }
   }
 }
 
