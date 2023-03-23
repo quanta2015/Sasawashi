@@ -11,12 +11,14 @@ let opts = new chrome.Options();
 
 const server = `http://sasawashi.com`
 
-
 data = [
-    {
-       
-        "url": "/view/item/000000000090?category_page_id=yarn"
-    }]
+  {"url": "/view/item/000000000080?category_page_id=all_items"},
+  {"url": "/view/item/000000000079?category_page_id=all_items"},
+  {"url": "/view/item/000000000078?category_page_id=all_items"},
+  {"url": "/view/item/000000000094?category_page_id=all_items"},
+  {"url": "/view/item/000000000093?category_page_id=all_items"},
+  {"url": "/view/item/000000000018?category_page_id=all_items"}
+]
 
 var ret = [];
 
