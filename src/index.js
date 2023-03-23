@@ -23,9 +23,7 @@ let Guide    = Loadable({ loader: () => import('./app/guide')})
 let News     = Loadable({ loader: () => import('./app/news')})
 let Shop     = Loadable({ loader: () => import('./app/shop')})
 // let Contact  = Loadable({ loader: () => import('./app/contact')})
-
-
-let Slide  = Loadable({ loader: () => import('./app/slide')})
+let Cart  = Loadable({ loader: () => import('./app/cart')})
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -42,8 +40,7 @@ root.render(
             <Route path="/news"    element={<News />} />
             <Route path="/shop"    element={<Shop />} />
             {/*<Route path="/contact"    element={<Contact />} />*/}
-
-            <Route path="/slide"  element={<Slide />} />
+            <Route path="/cart"  element={<Cart />} />
           </Route>
         </Routes>
       </BrowserRouter>
