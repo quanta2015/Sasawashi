@@ -10,6 +10,12 @@ class Store {
   }
 
   open = false
+  show = false
+  contact = false
+
+  setShow = (e) =>{
+    this.show = e
+  }
 
 
   async post(url, params) {
@@ -20,8 +26,14 @@ class Store {
     return await get(url,params)
   }
 
-  
-
+  async prodList(params) {
+    const r = await this.get(urls.API_PROD_LIST)
+    if (r.code === 0) {
+      return r.data
+    }else{
+      message.error('加载数据出错!')
+    }
+  }
 
   async exportStud(params) {
     const r = await this.post(urls.API_MENU_LOAD,params)
