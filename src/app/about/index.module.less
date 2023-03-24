@@ -57,17 +57,27 @@
 
 
 .sect {
-  display: block;
-  margin-right: auto;
-  padding: 100px 40px 0 9.375%;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
+  margin: 0 80px;
+  margin-top: 80px;
+  box-sizing: border-box;
 }
 
 .hd {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  padding-left: 40px;
+
+
+  &:global(.big) {
+
+    span {
+      font-size: 48px;
+    }
+    
+  }
 
 
   label {
