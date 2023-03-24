@@ -83,6 +83,24 @@
   }
 }
 
+
+.topLIst {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+
+  .item {
+    display: flex;
+
+    width: 45%;
+
+    &:nth-child(2n) {
+      align-self: flex-end;
+      margin-top: -20%;
+    }
+  }
+}
+
 .imgItem {
   position: relative;
   color: #666;
