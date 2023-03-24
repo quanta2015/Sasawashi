@@ -39,7 +39,7 @@ root.render(
             <Route path="/guide"   element={<Guide />} />
             <Route path="/news"    element={<News />} />
             <Route path="/shop"    element={<Shop />} />
-            <Route path="/contact"    element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/cart"  element={<Cart />} />
           </Route>
         </Routes>

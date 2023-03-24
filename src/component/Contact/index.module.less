@@ -196,14 +196,21 @@
 
 @media screen and (max-width: 768px) {
 
-  section {
+  .gc {
     width: 100vw;
     overflow: hidden;
-  }
+    background: #f7f8f7;
+    
 
-  .gc {
-    padding-top:  50px;
-    background: #fff;
+    &:global(.act) {
+      margin-top: 50px;
+      background: #fff;
+
+      .contact {
+        padding: 20px 0;
+      }
+
+    }
   }
 
   .contact {
@@ -211,10 +218,10 @@
     flex-direction: column;
 
     .left {
-      padding: 20px 0;
+      padding: 20px;
 
       h1 {
-        margin: 0;
+        margin: 0 0 10px;
         font-size: 42px;
       }
 
@@ -224,7 +231,7 @@
     }
     .right {
       margin: 0 ;
-      padding: 20px 0;
+      padding: 20px;
       flex-direction: column;
 
       .col {
