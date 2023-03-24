@@ -23,17 +23,25 @@ class Store {
   }
 
   async get(url, params) {
-    return await get(url,params)
-  }
-
-  async prodList(params) {
-    const r = await this.get(urls.API_PROD_LIST)
+    const r = await get(url,params)
     if (r.code === 0) {
       return r.data
     }else{
-      message.error('加载数据出错!')
+      return null
+      message.error(' 网络接口数据出错!')
     }
   }
+
+  async prodList(params) {
+    return await this.get(urls.API_PROD_LIST)
+  }
+
+  async prodListBest(params) {
+    return await this.get(urls.API_PROD_LIST_BEST)
+  }
+
+
+
 
   async exportStud(params) {
     const r = await this.post(urls.API_MENU_LOAD,params)
