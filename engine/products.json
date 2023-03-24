@@ -1,12 +1,62 @@
 [
   {
-    "type": "sasawashi-yarn",
-    "name": "ささ和紙糸",
-    "price": "￥1,650（税込）",
-    "desc": "ささ和紙100%で、番手は1／13の糸です。仕立てはコーンに巻き上げております。手芸等にご利用くださいませ。",
-    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/1_000000000090.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/2_000000000090.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/3_000000000090.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/4_000000000090.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/5_000000000090.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/6_000000000090.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/90/00/7_000000000090.jpg?1678209904\"]",
-    "clrList": "[\"https://gigaplus.makeshop.jp/sasawashi/img/category/yarn/sasawashi-yarn/B-150K/img_color_01.jpg\",\"https://gigaplus.makeshop.jp/sasawashi/img/category/yarn/sasawashi-yarn/B-150K/img_color_02.jpg\",\"https://gigaplus.makeshop.jp/sasawashi/img/category/yarn/sasawashi-yarn/B-150K/img_color_03.jpg\"]",
-    "cltList": "[\"オフホワイト\",\"ベージュ\",\"キャメル\"]",
-    "sizeList": "[\"約225g（3,000m）\"]"
+    "type": "kumazasa-solution",
+    "name": "不思議なくま笹液5000ml",
+    "price": "￥23,100（税込）",
+    "desc": "くまざさの原液ですから、20～30倍に薄めて、天然の抗菌防臭効果を活用しましょう。口に含んでうがいすれば、ほのかな甘さと香りがして後のすっきり感は格別。入浴剤や生ゴミ、トイレ、魚の臭い等を消すのにも効果的。\n\n※受注生産の為、ご注文後3週間〜4週間のお届けとなります。\n※ご注文後のキャンセル及び代金引換払いのご利用も不可となります。",
+    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/80/00/1_000000000080.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/80/00/3_000000000080.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/80/00/4_000000000080.jpg?1678209904\"]",
+    "clrList": "[]",
+    "cltList": "[]",
+    "sizeList": "[\"5000ml\"]"
+  },
+  {
+    "type": "kumazasa-solution",
+    "name": "不思議なくま笹液1000ml",
+    "price": "￥7,700（税込）",
+    "desc": "くまざさの原液ですから、20～30倍に薄めて、天然の抗菌防臭効果を活用しましょう。口に含んでうがいすれば、ほのかな甘さと香りがして後のすっきり感は格別。入浴剤や生ゴミ、トイレ、魚の臭い等を消すのにも効果的。",
+    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/79/00/5_000000000079.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/79/00/3_000000000079.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/79/00/4_000000000079.jpg?1678209904\"]",
+    "clrList": "[]",
+    "cltList": "[]",
+    "sizeList": "[\"1000ml\"]"
+  },
+  {
+    "type": "kumazasa-solution",
+    "name": "不思議なくま笹液200ml",
+    "price": "￥1,980（税込）",
+    "desc": "くまざさの原液ですから、20～30倍に薄めて、天然の抗菌防臭効果を活用しましょう。口に含んでうがいすれば、ほのかな甘さと香りがして後のすっきり感は格別。入浴剤や生ゴミ、トイレ、魚の臭い等を消すのにも効果的。",
+    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/78/00/1_000000000078.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/78/00/3_000000000078.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/78/00/4_000000000078.jpg?1678209904\"]",
+    "clrList": "[]",
+    "cltList": "[]",
+    "sizeList": "[\"200ml\"]"
+  },
+  {
+    "type": "soap",
+    "name": "くまざさ石けん",
+    "price": "￥1,980（税込）",
+    "desc": "きめ細かな泡立ちとナチュラルな使い心地がちょっぴり感動的な石けんです。肌をしっとりさせるオリーブ油と、葉緑素たっぷりのくまざさを配合しました。お肌の弱い方もお試しください。",
+    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/94/00/3_000000000094.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/94/00/4_000000000094.jpg?1678209904\"]",
+    "clrList": "[]",
+    "cltList": "[]",
+    "sizeList": "[\"100ｇ\"]"
+  },
+  {
+    "type": "slippers",
+    "name": "ルームシューズLLサイズ",
+    "price": "￥4,400（税込）",
+    "desc": "思わずなごむ、ナチュラルでかわいいかたち。足の甲がすっぽり覆われるので快適にはける、ささ和紙のルームシューズ。内側までささ和紙だから、吸湿性がよく、いつも清潔。外底はスエード調の素材でソフトな歩き心地です。",
+    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/93/00/1_000000000093.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/93/00/2_000000000093.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/93/00/3_000000000093.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/93/00/4_000000000093.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/93/00/5_000000000093.jpg?1678209904\"]",
+    "clrList": "[\"https://gigaplus.makeshop.jp/sasawashi/img/category/interia/slippers/WSP-11/img_color_01.jpg\",\"https://gigaplus.makeshop.jp/sasawashi/img/category/interia/slippers/WSP-11/img_color_02.jpg\",\"https://gigaplus.makeshop.jp/sasawashi/img/category/interia/slippers/WSP-11/img_color_03.jpg\"]",
+    "cltList": "[\"ベージュ\",\"キャメル\",\"グレー\"]",
+    "sizeList": "[\"LL（27～28.5cm）\"]"
+  },
+  {
+    "type": "gloves_cover",
+    "name": "アームカバーショート",
+    "price": "￥2,640（税込）",
+    "desc": "",
+    "imgList": "[\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/18/00/1_000000000018.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/18/00/2_000000000018.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/18/00/3_000000000018.jpg?1678209904\",\"https://makeshop-multi-images.akamaized.net/sasawashi/shopimages/18/00/4_000000000018.jpg?1678209904\"]",
+    "clrList": "[\"https://gigaplus.makeshop.jp/sasawashi/img/category/wear/gloves_cover/WGB-08/img_color_01.jpg\",\"https://gigaplus.makeshop.jp/sasawashi/img/category/wear/gloves_cover/WGB-08/img_color_02.jpg\"]",
+    "cltList": "[\"サンド\",\"ブラック\"]",
+    "sizeList": "[\"長さ約35cm\"]"
   }
 ]
