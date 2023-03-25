@@ -242,6 +242,12 @@
 }
 
 
+.search {
+  
+  display: none;
+  
+}
+
 
 @media screen and (max-width: 768px) {
   :global {
@@ -298,7 +304,7 @@
             transition: max-height .5s;
 
             &.show {
-              max-height: 1000px;
+              max-height: 2000px;
             }
 
           }
@@ -417,6 +423,28 @@
 
   .menutitle {
     margin: 10px 0;
+  }
+
+
+  .search {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+
+    input {
+      height: 40px;
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 13px;
+    }
+
+    img {
+      width: 16px;
+      margin: 10px;
+    }
   }
 
 

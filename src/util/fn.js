@@ -17,13 +17,14 @@ export const scrollToBottom =(direction)=> {
 }
 
 
-export const getFilter = (search)=>{
-  const searchParams = new URLSearchParams(search)
+export const getFilter = (loc)=>{
+  const searchParams = new URLSearchParams(loc)
     const id   = parseInt(searchParams.get('id'))
+    const search = searchParams.get('search')
     const name = searchParams.get('name')
     const sub  = searchParams.get('sub')
     const type = searchParams.get('type')
-    let filter = sub? {id ,name, key:'sub', val:sub }:{id, name:name, key:'type', val:type }
+    let filter = sub? {search, id ,name, key:'sub', val:sub }:{search, id, name:name, key:'type', val:type }
     return filter
 }
 
@@ -32,6 +33,18 @@ export const toOpt = (list,ret=[]) => {
   list.map(o=> ret.push({label:o, value: o}))
   ret.unshift( {label:'選択してください', value: '' })
   return ret
+}
+
+
+export const formatProdList = (list) =>{
+  list.map((item,i)=>{
+    item.imgList = JSON.parse(item.imglist)
+    item.clrList = JSON.parse(item.clrlist)
+    item.cltList = JSON.parse(item.cltlist)
+    item.sizeList = JSON.parse(item.sizelist)
+    item.intr = JSON.parse(item.intr)
+    item.desc = item.des
+  })
 }
 
 // export const formatTime = (dateStr)=> {

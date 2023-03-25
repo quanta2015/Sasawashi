@@ -9,8 +9,11 @@ class Store {
     makeAutoObservable(this);
   }
 
+  // 打开菜单子列表
   open = false
+  // 显示产品详情
   show = false
+  // 是否位于 `/contact` 路由
   contact = false
 
   setShow = (e) =>{
@@ -19,7 +22,13 @@ class Store {
 
 
   async post(url, params) {
-    return await post(url,params)
+    const r = await post(url,params)
+    if (r.code === 0) {
+      return r.data
+    }else{
+      return null
+      message.error(' 网络接口数据出错!')
+    }
   }
 
   async get(url, params) {
@@ -38,6 +47,11 @@ class Store {
 
   async prodListBest(params) {
     return await this.get(urls.API_PROD_LIST_BEST)
+  }
+
+
+  async searchByName(params) {
+    return await this.post(urls.API_PROD_SEARCH,params)
   }
 
 
