@@ -57,16 +57,34 @@
 
 
 .sect {
+<<<<<<< HEAD
     display: block;
     margin-right: auto;
     padding: 0 160px;
     margin-top: 110px;
+=======
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 80px;
+  margin-top: 80px;
+  box-sizing: border-box;
+>>>>>>> 2d53964b6c5ae8ca3b1fa6d9d80254df5cff2d69
 }
 
 .hd {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  padding-left: 40px;
+
+
+  &:global(.big) {
+
+    span {
+      font-size: 48px;
+    }
+    
+  }
 
   &:global(.big){
     span{

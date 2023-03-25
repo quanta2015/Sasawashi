@@ -1096,7 +1096,7 @@ export const ABOUT_FEATURE =[
 {
     "en":"Features",
     "num":"01",
-    "title":"驚きの吸水力でサラサラが続く心地よさ", 
+    "title":"驚きの吸水力で\nサラサラが続く心地よさ", 
     "content":"和紙だから、サラサラ快適綿の約２倍の吸水力。 しかも水分の後戻りがほとんどないため、 汗をかいてもべとつかず、表面はいつもサラサラ。", 
     "img":"https://gigaplus.makeshop.jp/sasawashi/img/about/feature_01.jpg"  },
 {   
